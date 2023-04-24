@@ -4,6 +4,7 @@ return {
 	{
 		"lukas-reineke/indent-blankline.nvim",
 		"nvim-lualine/lualine.nvim",
+		"windwp/nvim-autopairs",
 		"kyazdani42/nvim-web-devicons"
 	},
   {
@@ -57,5 +58,12 @@ return {
 	{
 		"norcalli/nvim-colorizer.lua",
 		config = { '*'; }
+	},
+	{
+		"lewis6991/gitsigns.nvim",
+		config = {}
+	},
+	{
+		"windwp/nvim-autopairs"
 	}
 }

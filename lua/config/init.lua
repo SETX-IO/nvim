@@ -8,6 +8,7 @@ require "config/cmp"
 require "config/lsp"
 require "config/lualine"
 require "config/lsp/lspaga"
+require "config/nvim-autopairs"
 
 G.g.aded_netrw = 1
 G.g.loaded_netrwPlugin = 1
