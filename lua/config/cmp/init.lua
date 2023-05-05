@@ -30,6 +30,11 @@ local cmp_kinds = {
 	TypeParameter = '',
 }
 
+require("luasnip.loaders.from_vscode").lazy_load();
+require("luasnip.loaders.from_vscode").load {
+	vim.fn.stdpath("config") .. "/snippets";
+}
+
 cmp.setup {
 	snippet = {
 		expand = function(args)
@@ -69,4 +74,3 @@ cmp.setup {
 		{ { name = 'buffer' } }
 	)
 }
-
