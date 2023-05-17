@@ -1,6 +1,7 @@
 require "config/lazy"
 
 require "config/noice"
+require "config.fzf"
 require "config/nvim-treesitter"
 require "config/blankline"
 require "config/mason"

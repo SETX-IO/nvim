@@ -4,7 +4,8 @@ G = {};
 G.enable = false;
 G.g = vim.g;
 G.opt = vim.opt;
-G.keymap = vim.keymap.set;
+G.map = vim.keymap.set;
+G.cmd = vim.cmd;
 
 local function setvim(conf)
 	G.opt.number = conf.number

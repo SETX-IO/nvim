@@ -1,2 +1,2 @@
-G.keymap("n", "<C-s>", "<cmd>w<CR>");
+G.map("n", "<C-s>", "<cmd>w<CR>");
 

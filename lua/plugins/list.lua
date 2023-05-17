@@ -67,5 +67,12 @@ return {
 	},
 	{
 		"windwp/nvim-autopairs"
+	},
+	{
+		"junegunn/fzf",
+		build = "cd ~/.fzf && ./install -all",
+		dependencies = {
+			"junegunn/fzf.vim"
+		}
 	}
 }
