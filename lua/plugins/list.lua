@@ -7,17 +7,17 @@ return {
 		"windwp/nvim-autopairs",
 		"kyazdani42/nvim-web-devicons"
 	},
-  {
-    "olimorris/onedarkpro.nvim",
-		config = function() vim.cmd"colorscheme onedark" end
-  },
-  {
-    "folke/noice.nvim",
+	{
+		"olimorris/onedarkpro.nvim",
+		config = function() vim.cmd "colorscheme onedark" end
+	},
+	{
+		"folke/noice.nvim",
 		dependencies = {
-      'MunifTanjim/nui.nvim',
-      'rcarriga/nvim-notify'
-    }
-  },
+			'MunifTanjim/nui.nvim',
+			'rcarriga/nvim-notify'
+		}
+	},
 	{
 		"glepnir/lspsaga.nvim",
 		event = "LspAttach",
@@ -25,12 +25,12 @@ return {
 	},
 	{
 		"nvim-tree/nvim-tree.lua",
-		keys = { { "<C-l>" , "<cmd>NvimTreeToggle<CR>" } },
+		keys = { { "<C-l>", "<cmd>NvimTreeToggle<CR>" } },
 		config = {}
 	},
 	{
-    "akinsho/bufferline.nvim",
-    event = "VeryLazy",
+		"akinsho/bufferline.nvim",
+		event = "VeryLazy",
 		config = {}
 	},
 	{
@@ -59,20 +59,38 @@ return {
 	},
 	{
 		"norcalli/nvim-colorizer.lua",
-		config = { '*'; }
+		config = { '*', }
 	},
 	{
 		"lewis6991/gitsigns.nvim",
-		config = {}
+		config = {
+			signs = {
+				delete       = { text = '│' },
+				topdelete    = { text = '│' },
+				changedelete = { text = '│' },
+				untracked    = { text = '│' }
+			}
+		}
 	},
 	{
 		"windwp/nvim-autopairs"
 	},
 	{
 		"junegunn/fzf",
-		build = "cd ~/.fzf && ./install -all",
+		build = "cd ~/.fzf && ./install --all",
 		dependencies = {
 			"junegunn/fzf.vim"
 		}
+	},
+	{
+		"numToStr/Comment.nvim",
+		config = {
+			toggler = {
+				line = '<C-m>'
+			}
+		}
 	}
 }
+
+
+

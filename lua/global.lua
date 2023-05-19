@@ -15,6 +15,7 @@ local function setvim(conf)
 	G.opt.relativenumber = conf.relativenumber;
 	G.opt.termguicolors = conf.termguicolors;
 	G.opt.signcolumn = conf.signcolumn;
+	G.opt.encoding = conf.encoding;
 end
 
 function G.setup(opt)
