@@ -25,8 +25,7 @@ return {
 	},
 	{
 		"nvim-tree/nvim-tree.lua",
-		keys = { { "<C-l>", "<cmd>NvimTreeToggle<CR>" } },
-		config = {}
+		keys = { { "<C-l>", "<cmd>NvimTreeToggle<CR>" } }
 	},
 	{
 		"akinsho/bufferline.nvim",
@@ -59,7 +58,7 @@ return {
 	},
 	{
 		"norcalli/nvim-colorizer.lua",
-		config = { '*', }
+		config = { 'lua', "cpp", "cc", "c", "h" }
 	},
 	{
 		"lewis6991/gitsigns.nvim",
@@ -89,8 +88,9 @@ return {
 				line = '<C-m>'
 			}
 		}
+	},
+	{
+		"folke/todo-comments.nvim",
+		dependencies = { "nvim-lua/plenary.nvim" },
 	}
 }
-
-
-
