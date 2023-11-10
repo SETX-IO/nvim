@@ -1,7 +1,7 @@
 local cmp = require "cmp"
 local basic = require "config.plugin.cmp.basic"
 
-source = {
+local source = {
     { name = 'nvim_lsp' },
     { name = "luasnip" },
     { name = "cmp_luasnip"},
@@ -54,7 +54,7 @@ config = {
         end
     },
     mapping = cmp.mapping.preset.insert(basic.key),
-    sources = cmp.config.sources(source)
+    sources = cmp.config.sources(source),
 }
 
 require("luasnip.loaders.from_vscode").lazy_load();

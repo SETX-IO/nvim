@@ -1,5 +1,5 @@
 tree = require "nvim-tree"
-config = { 
+config = {
     renderer = {
         indent_markers = { enable = true },
         icons = {

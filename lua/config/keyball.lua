@@ -1,6 +1,6 @@
 -- Bufferline
-setkey("n", "<C-a>", function() bufferline.cycle(1) end)
-setkey("n", "<C-d>", function() bufferline.cycle(-1) end)
+setkey("n", "<C-d>", function() bufferline.cycle(1) end)
+setkey("n", "<C-a>", function() bufferline.cycle(-1) end)
 
 -- nvim-tree
 tree_api = require "nvim-tree.api"
@@ -19,7 +19,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
     callback =
         function(args)
             local buf = args.buf
-            vim.api.nvim_buf_set_keymap(buf, "n", "<C-e>", "<cmd>lua vim.lsp.buf.format()<cr>", { noremap = true })
+            vim.api.nvim_buf_set_keymap(buf, "n", "<C-r>", "<cmd>lua vim.lsp.buf.format()<cr>", { noremap = true })
         end
 })
 

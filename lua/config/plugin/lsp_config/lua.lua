@@ -1,5 +1,9 @@
 neodev = require("neodev")
 config = {
+    cmd = {
+        "lua-language-server",
+        "--locale=zh-cn"
+    },
     settings = {
         Lua = {
             completion = {

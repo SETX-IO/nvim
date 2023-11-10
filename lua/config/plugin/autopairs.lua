@@ -19,4 +19,3 @@ config = {
 }
 
 autopairs.setup(config)
-

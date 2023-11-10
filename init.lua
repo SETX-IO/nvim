@@ -1,2 +1,2 @@
 require "lazyInit"
-require "config.plugin"
+require "config"
