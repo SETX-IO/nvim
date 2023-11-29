@@ -7,6 +7,9 @@ config = {
             not_loaded = "󱉙",
             task = "󱝍 "
         }
+    },
+    git = {
+        url_format = "git@github.com:%s.git"
     }
 }
 

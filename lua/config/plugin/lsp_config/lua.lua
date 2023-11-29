@@ -13,7 +13,8 @@ config = {
                 version = 'Lua 5.4',
             }
         }
-    }
+    },
+    callSnippet = capabilities
 }
 
 neodev.setup()

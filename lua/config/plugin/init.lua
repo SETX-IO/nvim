@@ -8,11 +8,12 @@ require "config.plugin.noice"
 
 require "config.plugin.autopairs"
 require "config.plugin.gitsigns"
+require "config.plugin.Todo"
 
 require "config.plugin.cmp"
 require "config.plugin.lsp"
 require "config.plugin.lsp_config"
 
-require('onedark').load()
+require("onedarkpro").load()
 
 require "config.keyball"

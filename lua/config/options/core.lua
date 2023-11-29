@@ -11,16 +11,14 @@ vim.wo.relativenumber = true
 vim.wo.cursorline = true
 -- 显示左侧图标指示列
 vim.wo.signcolumn = "yes"
--- 右侧参考线，超过表示代码太长了，考虑换行
-vim.wo.colorcolumn = "80"
 -- 缩进2个空格等于一个Tab
-vim.o.tabstop = 4
-vim.bo.tabstop = 4
-vim.o.softtabstop = 4
+vim.o.tabstop = 2
+vim.bo.tabstop = 2
+vim.o.softtabstop = 2
 vim.o.shiftround = true
 -- >> << 时移动长度
-vim.o.shiftwidth = 4
-vim.bo.shiftwidth = 4
+vim.o.shiftwidth = 2
+vim.bo.shiftwidth = 2
 -- 新行对齐当前行，空格替代tab
 vim.o.expandtab = true
 vim.bo.expandtab = true
@@ -34,8 +32,6 @@ vim.o.smartcase = true
 vim.o.hlsearch = false
 -- 边输入边搜索
 vim.o.incsearch = true
--- 使用增强状态栏后不再需要 vim 的模式提示
-vim.o.showmode = false
 -- 当文件被外部程序修改时，自动加载
 vim.o.autoread = true
 vim.bo.autoread = true
