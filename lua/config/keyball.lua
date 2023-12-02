@@ -20,13 +20,13 @@ setkey("n", "dp", "<cmd>Lspsaga diagnostic_jump_prev<cr>")
 
 -- INFO: lsp
 vim.api.nvim_create_autocmd("LspAttach", {
-    callback =
-        function(args)
-            local buf = args.buf
-            local opt = { buffer = buf }
-            vim.api.nvim_buf_set_keymap(buf, "n", "<C-r>", "<cmd>lua vim.lsp.buf.format()<cr>", { noremap = true })
-            setkey("n", "gd", vim.lsp.buf.declaration, opt)
-        end
+  callback =
+      function(args)
+        local buf = args.buf
+        local opt = { buffer = buf }
+        vim.api.nvim_buf_set_keymap(buf, "n", "<C-r>", "<cmd>lua vim.lsp.buf.format()<cr>", { noremap = true })
+        setkey("n", "gd", vim.lsp.buf.declaration, opt)
+      end
 })
 
 -- INFO: fzf

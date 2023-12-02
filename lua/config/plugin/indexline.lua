@@ -1,7 +1,8 @@
 indexline = require "ibl"
+indexline.hooks = require "ibl.hooks"
 
-indexline.setup {
-    indent = {
-        highlight = { "Function", "Label" },
-    }
+config = {
+  scope = { highlight = { "Function" } }
 }
+
+indexline.setup(config)
