@@ -4,6 +4,7 @@ return {
   "lukas-reineke/indent-blankline.nvim",
   "nvim-tree/nvim-tree.lua",
   "folke/neodev.nvim",
+  "pmizio/typescript-tools.nvim",
   "lewis6991/gitsigns.nvim",
   "folke/todo-comments.nvim",
   { "folke/noice.nvim",                event = "VeryLazy" },

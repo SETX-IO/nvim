@@ -4,7 +4,7 @@ config = {
     "--clang-tidy",
     "--all-scopes-completion",
     "--completion-style=detailed",
-    "--header-insertion=iwyu",
+    "--header-insertion=never",
     "--j=4",
     "--background-index"
   },
