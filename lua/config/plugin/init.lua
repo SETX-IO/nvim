@@ -9,6 +9,7 @@ require "config.plugin.noice"
 require "config.plugin.autopairs"
 require "config.plugin.gitsigns"
 require "config.plugin.Todo"
+require "config.plugin.comment"
 
 require "config.plugin.cmp"
 require "config.plugin.lsp"

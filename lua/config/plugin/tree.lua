@@ -5,9 +5,22 @@ config = {
     icons = {
       show = {
         folder_arrow = false
+      },
+      glyphs = {
+        git = {
+          unstaged = "M",
+          staged = "A",
+          unmerged = "",
+          renamed = "",
+          untracked = "U",
+          deleted = "",
+          ignored = "",
+        }
       }
     }
-  }
+  },
+  diagnostics = { enable = true }
 }
+
 
 tree.setup(config)

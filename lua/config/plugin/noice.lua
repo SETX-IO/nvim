@@ -28,10 +28,10 @@ config = {
   }
 }
 
-notify.setup({
-  fps = 1,
+notify.setup {
+  fps = 120,
   render = "wrapped-compact",
   stages = "static"
-})
+}
 
 noice.setup(config)

@@ -10,9 +10,6 @@ local Lspserver = {
     for _, client in ipairs(clients) do
       local filetypes = client.config.filetypes
       if filetypes and vim.fn.index(filetypes, buf_ft) ~= -1 then
-        if client.name == "kotlin_language_server" then
-          return "kotlin_ls"
-        end
         return client.name
       end
     end
@@ -27,7 +24,6 @@ config = {
     fmt = string.lower,
     component_separators = '',
     section_separators = '',
-
   },
   sections = {
     lualine_a = {},
@@ -43,9 +39,7 @@ config = {
       {
         'mode',
         fmt = function(str) return "— " .. str .. " —" end,
-        color = {
-          bg = '#3D4350'
-        },
+        color = { bg = '#3D4350' },
         padding = { left = 0, right = 1 }
       },
       {
@@ -59,7 +53,7 @@ config = {
     lualine_x = {
       Lspserver,
       { "filetype", color = { bg = "#3D4350", fg = "#ABB2BF" }, padding = { right = 0, left = 1 } },
-      { "location", color = { bg = "#3D4350" },                 padding = { left = 0, right =  1} },
+      { "location", color = { bg = "#3D4350" }, },
       {
         function()
           return '█'

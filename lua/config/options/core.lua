@@ -60,7 +60,7 @@ vim.o.background = "dark"
 vim.o.termguicolors = true
 vim.opt.termguicolors = true
 -- 不可见字符的显示，这里只把空格显示为一个点
-vim.o.list = true
+vim.o.list = false
 vim.o.listchars = "space:·"
 -- 补全增强
 vim.o.wildmenu = true
@@ -69,3 +69,6 @@ vim.o.shortmess = vim.o.shortmess .. 'c'
 vim.o.pumheight = 10
 -- always show tabline
 vim.o.showtabline = 4
+
+-- 使用 EditorConfig
+vim.g.editorconfig = true
